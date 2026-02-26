@@ -10,6 +10,8 @@ Python library for controlling the Native Instruments Maschine MK1 controller on
 - Startup animation sequences
 - MIDI support
 
+[<img src="maschine.png" width="450"/>](maschine.png)
+
 ## Installation
 
 ```bash
