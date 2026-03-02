@@ -51,10 +51,23 @@ led.close()
 
 ## Requirements
 
-- Linux
+- Linux  (ubuntu 25.10 or similar)
 - Python 3.13+
 - Native Instruments Maschine MK1 controller
 - libusb (via hidapi-libusb)
+- librtmidi (7)
+
+Allow access to the device
+```
+sudo usermod -a -G plugdev $USER
+```
+
+Check if `librtmidi.so.7` was installed
+```
+ldconfig -p | grep rtmdidi
+```
+if no, you might need to install or upgrade `sudo apt-get install librtmidi`
+
 
 ## Auto-start on device connect
 
